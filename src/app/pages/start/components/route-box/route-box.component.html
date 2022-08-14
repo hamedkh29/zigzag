@@ -1,6 +1,6 @@
 <mat-card>
   <div class="title">
-  Wähle Deine Pendelroute
+    Wähle Deine Pendelroute
   </div>
   <span class="subtitle">
   um zu sehen, wie viel CO2 Du mit VVS sparen kannst
@@ -12,42 +12,42 @@
       <img src="/assets/icons/icon-destination.svg"/>
     </div>
     <div class="inputs">
-        <ng-select [items]=" sources$ | async"
-                   [typeahead]="sourcesInput$"
-                   placeholder="von : Ort, Haltestelle, Adresse, POI"
-                   bindLabel="disassembledName"
-                   [loading]="sourcesLoading"
-                   [(ngModel)]="selectedSource"
-        >
-          <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
-            <div class="ng-select-image">
+      <ng-select [items]=" sources$ | async"
+                 [typeahead]="sourcesInput$"
+                 placeholder="von : Ort, Haltestelle, Adresse, POI"
+                 bindLabel="disassembledName"
+                 [loading]="sourcesLoading"
+                 [(ngModel)]="selectedSource"
+      >
+        <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+          <div class="ng-select-image m-2">
             <img [src]="'/assets/icons/'+item.type+'.svg'"/>
-              <div>
-                <div class="item-option">{{item.disassembledName}}</div>
-                <div class="sub-item-option">{{item.parent.name}}</div>
-              </div>
+            <div>
+              <div class="item-option">{{item.disassembledName}}</div>
+              <div class="sub-item-option">{{item.parent.name}}</div>
             </div>
-            <hr/>
-          </ng-template>
-        </ng-select>
-        <ng-select [items]="destinations$ | async"
-                   [typeahead]="destinationsInput$"
-                   placeholder="nach : Ort, Haltestelle, Adresse, POI"
-                   bindLabel="disassembledName"
-                   [loading]="destinationLoading"
-                   [(ngModel)]="selectedDestination"
-        >
-          <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
-            <div class="ng-select-image">
-              <img [src]="'/assets/icons/'+item.type+'.svg'"/>
-              <div>
-                <div class="item-option">{{item.disassembledName}}</div>
-                <div class="sub-item-option">{{item.parent.name}}</div>
-              </div>
+          </div>
+          <hr/>
+        </ng-template>
+      </ng-select>
+      <ng-select [items]="destinations$ | async"
+                 [typeahead]="destinationsInput$"
+                 placeholder="nach : Ort, Haltestelle, Adresse, POI"
+                 bindLabel="disassembledName"
+                 [loading]="destinationLoading"
+                 [(ngModel)]="selectedDestination"
+      >
+        <ng-template ng-option-tmp let-item="item" let-index="index" let-search="searchTerm">
+          <div class="ng-select-image m-2">
+            <img [src]="'/assets/icons/'+item.type+'.svg'"/>
+            <div>
+              <div class="item-option">{{item.disassembledName}}</div>
+              <div class="sub-item-option">{{item.parent.name}}</div>
             </div>
-            <hr/>
-          </ng-template>
-        </ng-select>
+          </div>
+          <hr/>
+        </ng-template>
+      </ng-select>
     </div>
     <div class="exchange">
       <button mat-button class="exchange-button" (click)="exchange()">

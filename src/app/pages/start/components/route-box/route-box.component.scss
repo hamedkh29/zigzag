@@ -102,6 +102,9 @@ mat-card{
 ::ng-deep .ng-select .ng-select-container{
   min-height: 45px;
 }
+::ng-deep .ng-dropdown-panel{
+  border-radius:8px;
+}
 .item-option{
   line-height: 1.6em !important;
 }
