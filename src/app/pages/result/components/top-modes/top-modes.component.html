@@ -1,0 +1,24 @@
+<div class="top-modes">
+  <div class="align-items-center justify-content-center" id="car">
+    <img src="/assets/icons/car-icon.svg"/>
+    <div class="title">
+          <span *ngIf="!isLoading && autoDistance">
+            {{autoDistance! | meterToKilometer}}
+          </span>
+      <ngx-skeleton-loader *ngIf="isLoading" count="1" appearance="line"
+                           animation="progress"
+      ></ngx-skeleton-loader>
+    </div>
+  </div>
+  <div class="align-items-center justify-content-center" id="bus">
+    <img src="/assets/icons/bus-icon.svg"/>
+    <div class="title">
+          <span *ngIf="!isLoading && publicTransportDistance">
+            {{publicTransportDistance! | meterToKilometer}}
+          </span>
+      <ngx-skeleton-loader *ngIf="isLoading" count="1" appearance="line"
+                           animation="progress"
+      ></ngx-skeleton-loader>
+    </div>
+  </div>
+</div>

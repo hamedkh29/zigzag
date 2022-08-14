@@ -1,0 +1,83 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+@import "~@ng-select/ng-select/themes/material.theme.css";
+@import "styles/theme";
+//bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities"; // Configures the utility classes that should be generated
+@import "~bootstrap/scss/utilities/api"; // Generates the actual utility classes
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+@font-face {
+  font-family: 'CircularStd';
+  src: url('assets/fonts/CircularStd-Medium.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'CircularStdBook';
+  src: url('assets/fonts/CircularStd-Book.otf');
+}
+@font-face {
+  font-family: 'CircularStd';
+  src: url('assets/fonts/CircularStd-Bold.otf');
+  font-weight: bold;
+}
+
+html, body { height: 100%; }
+body { margin: 0;
+  font-family: CircularStd, serif; }
+  .page-container {
+    height: 100vh;
+    overflow: auto;
+    background: #fafafa;
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+
+    header{
+      background-color: $primary;
+    }
+  }
+app-menu{
+  flex: 1;
+}
+.wrapper{
+  max-width: 734px;
+  margin:0 auto;
+}
+.carousel-indicators > button{
+  height:6px !important;
+  width: 6px !important;
+}
+.carousel-indicators .mat-accent{
+  background-color:rgba(0, 0, 0, 0.12);
+  box-shadow: none !important;
+}
+.carousel-indicators .mat-button-disabled{
+  background-color:$primary !important;
+}
+.carousel-slide{
+  border-radius: 8px;
+  overflow: hidden;
+}
+main{
+  min-height: 100vh;
+}

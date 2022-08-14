@@ -1,0 +1,36 @@
+<div class="zigzag-card" [ngClass]="{'primary-card': color === 'primary'}">
+  <div class="d-flex flex-row">
+    <div class="zigzag-icon">
+      <ngx-skeleton-loader *ngIf="isLoading" count="1" appearance="line"
+                           animation="progress"
+      ></ngx-skeleton-loader>
+      <span *ngIf="!isLoading && type">
+            <img [src]="icon"/>
+          </span>
+    </div>
+    <div class="type-container ms-2">
+      <ngx-skeleton-loader *ngIf="isLoading" count="1" appearance="line"
+                           animation="progress"
+      ></ngx-skeleton-loader>
+      <span *ngIf="!isLoading && type">
+            {{type}}
+          </span>
+    </div>
+  </div>
+  <div class="weight-container">
+    <ngx-skeleton-loader *ngIf="isLoading" count="1" appearance="line"
+                         animation="progress"
+    ></ngx-skeleton-loader>
+    <span *ngIf="!isLoading && weight">
+            {{weight}} kg
+          </span>
+  </div>
+  <div class="fuel-container">
+    <ngx-skeleton-loader *ngIf="isLoading" count="1" appearance="line"
+                         animation="progress"
+    ></ngx-skeleton-loader>
+    <span *ngIf="!isLoading">
+            CO2 &nbsp;/ &nbsp;Jahr
+          </span>
+  </div>
+</div>

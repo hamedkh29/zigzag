@@ -1,0 +1,37 @@
+@import "../../../../../styles/theme";
+.top-modes{
+  overflow: hidden;
+  max-width: 541px;
+  margin: 0 auto;
+  height:68px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  white-space:nowrap;
+  font-family: CircularStdBook;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  display: flex;
+  > div{
+    flex-grow: 1;
+  }
+  .title{
+    width: 50%;
+    margin:0 auto;
+  }
+  img{
+    max-height: 40px;
+    margin: 5px 0 0 4px;
+    padding: 2px 4px 4px 3px;
+  }
+}
+#bus{
+  background-color: $primary;
+  color:white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+}

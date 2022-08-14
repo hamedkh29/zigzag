@@ -1,0 +1,30 @@
+.container-fluid{
+  height: 225px;
+  padding: 20px 50px;
+  background-color: #f6f6f6;
+}
+.breadcrumbs{
+  margin: 0 0 20px 0;
+  font-family: CircularStd;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+h1{
+  margin: 20px 0 12px 0;
+  font-family: CircularStd;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+}
+@media (min-width: 576px) {
+  h1{
+    font-size: 48px;
+  }
+}

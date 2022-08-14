@@ -1,0 +1,66 @@
+@use '@angular/material' as mat;
+@use 'sass:map';
+@include mat.core();
+
+
+$zigzag-palette: (
+  50: #fc631e,
+  100: #fc631e,
+  200: #fc631e,
+  300: #fc631e,
+  400: #fc631e,
+  500: #fc631e,
+  600: #fc631e,
+  700: #fc631e,
+  800: #fc631e,
+  900: #fc631e,
+  A100: #fc631e,
+  A200: #fc631e,
+  A400: #fc631e,
+  A700: #fc631e,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+$zigzag-primary: mat.define-palette($zigzag-palette);
+$zigzag-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$zigzag-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$zigzag-theme: mat.define-light-theme((
+  color: (
+    primary: $zigzag-primary,
+    accent: $zigzag-accent,
+    warn: $zigzag-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($zigzag-theme);
+
+//variables
+// Get the color config from the theme.
+$color-config: mat.get-color-config($zigzag-theme);
+
+// Get the primary color palette from the color-config.
+$primary-palette: map.get($color-config, 'primary');
+
+$primary:mat.get-color-from-palette($primary-palette, 500);

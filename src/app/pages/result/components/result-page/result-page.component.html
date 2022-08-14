@@ -1,0 +1,50 @@
+<app-top-content title="Umweltrechner" [map]="{title:'Rundum mobil / Preis- und Umweltvergleich',link:'#'}">
+  Pendeln an <a class="text-primary" href="#">210 Tagen</a> mit  <a href="#">Mittelklasse</a> von  <a href="#">Tamm</a> bis  <a href="#">Stadtmitte</a>
+</app-top-content>
+<div class="wrapper">
+  <div class="container">
+    <app-top-modes
+      [isLoading]="isLoading"
+      [autoDistance]="model?.auto?.distance"
+      [publicTransportDistance]="model?.publicTransport?.distance">
+    </app-top-modes>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="title-container">
+          Auswirkungen auf die Umwelt
+        </div>
+        <div class="box-container">
+          <div class="row">
+            <div class="col-6">
+              <app-box type="Auto" icon="/assets/icons/car-icon-2.svg" [weight]="model?.auto?.co2" [isLoading]="isLoading"></app-box>
+            </div>
+            <div class="col-6">
+              <app-box color="primary" type="VVS Abo" icon="/assets/icons/vvs-logo.svg" [weight]="model?.publicTransport?.co2" [isLoading]="isLoading"></app-box>
+            </div>
+            <div class="col text-end mt-2">
+              <a href="#">Wie entstehen diese Werte?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="title-container">
+          Kosteneinschätzung für ein Jahr
+        </div>
+        <div class="box-container">
+          <div class="row">
+            <div class="col-6">
+              <app-box></app-box>
+            </div>
+            <div class="col-6">
+              <app-box color="primary"></app-box>
+            </div>
+            <div class="col text-end mt-2">
+              <a href="#">Wie entstehen diese Werte?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

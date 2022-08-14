@@ -1,0 +1,117 @@
+mat-card{
+  max-width: 335px;
+  padding: 30px 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.subtitle{
+  padding:0 5px;
+  font-family: CircularStd;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #666;
+}
+.title{
+  padding:0 5px;
+  font-family: CircularStd;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.routes{
+  padding:0 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.line-route {
+  width: 1px;
+  height: 49px;
+  border-right: dashed 1px #979797;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  flex-flow:wrap;
+}
+.icons > img{
+  margin-left: 1px;
+}
+.btn-confirm{
+  width: 100%;
+  height: 44px;
+  margin: 28px 0 0;
+  border-radius: 4px;
+}
+.inputs{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  flex-grow: 1;
+  margin: 0px 10px;
+  flex-direction:column;
+
+}
+.exchange{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  width: 38px;
+}
+.exchange-button{
+  align-self: center;
+  height: 38px;
+}
+.ng-select-image{
+  display: flex;
+  align-items: flex-start;
+}
+.ng-select-image img{
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+::ng-deep .ng-select .ng-select-container:after{
+  border-color: #e6e6e6 !important;
+}
+::ng-deep .ng-select .ng-arrow-wrapper{
+  display: none;
+}
+::ng-deep .ng-select .ng-has-value .ng-placeholder{
+  display: none;
+}
+::ng-deep .ng-select-focused .ng-placeholder{
+  display: none;
+}
+::ng-deep .ng-select .ng-select-container{
+  min-height: 45px;
+}
+.item-option{
+  line-height: 1.6em !important;
+}
+.sub-item-option{
+  color: #8b8b8b;
+  font-size: 12px;
+  line-height: 1.3em !important;
+}
+hr{
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}

@@ -1,0 +1,57 @@
+@import "../../../../../styles/theme";
+.zigzag-card{
+  width: 100%;
+  max-width: 160px;
+  height: 100px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  .zigzag-icon{
+    width: 24px;
+    height: 24px;
+  }
+  .type-container{
+    width: 100%;
+    font-family: CircularStdBook;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    white-space: nowrap;
+  }
+  ::ng-deep .loader{
+    margin-bottom: 0 !important;
+  }
+  .weight-container{
+    margin: 7px 0 0;
+    font-family: CircularStd;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    white-space: nowrap;
+  }
+  .fuel-container{
+    white-space: nowrap;
+    font-family: CircularStdBook;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #666;
+  }
+}
+.primary-card{
+  color:white;
+  background-color:$primary;
+  .fuel-container{
+    color: white;
+  }
+}

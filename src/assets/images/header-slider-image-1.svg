@@ -1,0 +1,77 @@
+<svg width="335" height="286" viewBox="0 0 335 286" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="2b250riv1a" x="0" y="0" width="335" height="270" rx="8"/>
+        <rect id="t64ghhr1me" x="0" y="0" width="160" height="100" rx="8"/>
+        <rect id="f1ry8hrv7i" x="0" y="0" width="160" height="100" rx="8"/>
+        <filter x="-8.1%" y="-11%" width="116.2%" height="126%" filterUnits="objectBoundingBox" id="zrg85j9sad">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <filter x="-8.1%" y="-11%" width="116.2%" height="126%" filterUnits="objectBoundingBox" id="xmtldbp7vh">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <linearGradient x1="95.872%" y1="33.028%" x2="6.08%" y2="80.329%" id="zj4w8q9ahb">
+            <stop stop-color="#FEA040" offset="0%"/>
+            <stop stop-color="#FC631E" offset="100%"/>
+        </linearGradient>
+        <circle id="k124caw4af" cx="12" cy="12" r="12"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="9ceyvuz6wc" fill="#fff">
+            <use xlink:href="#2b250riv1a"/>
+        </mask>
+        <use fill="url(#zj4w8q9ahb)" xlink:href="#2b250riv1a"/>
+        <path fill-opacity=".08" fill="#FFF" mask="url(#9ceyvuz6wc)" d="M335 0v270H0z"/>
+        <g mask="url(#9ceyvuz6wc)">
+            <g transform="rotate(-39 402.734 29.31)">
+                <use fill="#000" filter="url(#zrg85j9sad)" xlink:href="#t64ghhr1me"/>
+                <use fill="#FFF" xlink:href="#t64ghhr1me"/>
+            </g>
+            <text font-family="CircularStd-Book, Circular Std" font-size="14" fill="#000" transform="rotate(-39 402.734 29.31)">
+                                <tspan x="44.5" y="29.25">Auto</tspan>
+                            </text>
+            <g transform="rotate(-39 413.692 .8)">
+                <mask id="0hx5uiutgg" fill="#fff">
+                    <use xlink:href="#k124caw4af"/>
+                </mask>
+                <use fill="#000" xlink:href="#k124caw4af"/>
+                <g mask="url(#0hx5uiutgg)">
+                    <path d="M15.624 8.218c-.234-.457-.475-1.011-1.011-1.011H8.545c-.506 0-.799.622-1.011 1.011l-1.011 2.023h10.112l-1.011-2.023z"/>
+                    <path d="M5.511 16.308s0 1.011 1.012 1.011c1.01 0 1.01-1.01 1.01-1.01v-1.012H5.512v1.011zM15.624 16.308s0 1.011 1.011 1.011 1.011-1.01 1.011-1.01v-1.012h-2.022v1.011zM17.646 10.24 16.13 7.208c-.299-.457-.505-1.011-1.484-1.011H8.545c-1.011 0-1.264.522-1.517 1.011l-1.517 3.034s-1.011 0-1.011 1.011v2.022c0 1.012 1.011 1.012 1.011 1.012h12.135s1.012 0 1.012-1.012v-2.022c0-1.011-1.012-1.011-1.012-1.011zM7.534 8.219c.212-.39.505-1.011 1.011-1.011h6.068c.536 0 .778.554 1.01 1.011l1.012 2.023H6.523l1.01-2.023zm-1.011 5.056a1.012 1.012 0 1 1 0-2.023 1.012 1.012 0 0 1 0 2.023zm10.112 0a1.012 1.012 0 1 1 0-2.023 1.012 1.012 0 0 1 0 2.023z" fill="#FFF" fill-rule="nonzero"/>
+                </g>
+            </g>
+            <text font-family="CircularStd-Bold, Circular Std" font-size="24" font-weight="bold" fill="#000" transform="rotate(-39 402.734 29.31)">
+                                <tspan x="14.598" y="73.562">2.032 kg</tspan>
+                            </text>
+            <g>
+                <g transform="rotate(-39 317.734 -210.722)">
+                    <use fill="#000" filter="url(#xmtldbp7vh)" xlink:href="#f1ry8hrv7i"/>
+                    <use fill="#FC631E" xlink:href="#f1ry8hrv7i"/>
+                </g>
+                <text font-family="CircularStd-Book, Circular Std" font-size="14" fill="#FFF" transform="rotate(-39 317.734 -210.722)">
+                                <tspan x="44.5" y="29.25">VVS Abo</tspan>
+                            </text>
+                <path d="m226.793 151.119 12.674-10.264c1.039-.841 1.503-1.038 2.048-1.143a2.726 2.726 0 0 1 1.595.168c.51.215.924.505 1.766 1.544l10.263 12.674c.841 1.04 1.038 1.504 1.143 2.048a2.726 2.726 0 0 1-.168 1.595c-.215.51-.504.924-1.544 1.766l-12.674 10.263c-1.039.842-1.503 1.039-2.048 1.143a2.726 2.726 0 0 1-1.595-.168c-.51-.215-.924-.504-1.766-1.543l-10.263-12.674c-.841-1.04-1.038-1.504-1.143-2.049a2.726 2.726 0 0 1 .168-1.595c.215-.51.504-.924 1.544-1.765z" fill="#FFF"/>
+                <path fill="#000" fill-rule="nonzero" d="m238.531 158.225 1.081-.875 2.01 1.41-.93-2.285.918-.743 1.166 3.449-1.081.875zM241.97 155.44l1.048-.848 2.043 1.383-.929-2.285.917-.743 1.166 3.449-1.08.875zM247.595 153.814c.053.066.133.164.278.21.086.038.23.083.394-.05.23-.185.195-.428.09-.56-.133-.163-.35-.096-.633.024l-.63.294c-.217.067-.814.334-1.238-.19a.96.96 0 0 1-.177-.888c.097-.35.371-.68.732-.972.59-.477 1.311-.791 1.954-.064l-.917.742c-.08-.098-.159-.196-.245-.235-.145-.045-.263-.058-.427.075-.164.132-.242.304-.11.468.133.164.317.123.475.05l.88-.387c.315-.147.808-.275 1.205.216.743.917-.305 1.766-.534 1.952-.524.424-1.39.962-2.08.11l.983-.795z"/>
+                <path d="M233.53 160.756c2.865 3.538 8.055 4.053 11.592 1.189.82-.663 1.473-1.464 2.02-2.395l-1.42-.749a6.81 6.81 0 0 1-1.608 1.9c-2.85 2.307-7.031 1.897-9.339-.953-2.28-2.816-1.838-7.025 1.011-9.333 2.817-2.28 7.026-1.838 9.307.979l.053.065 1.244-1.008-.053-.065c-2.864-3.538-8.054-4.053-11.559-1.215-3.537 2.864-4.112 8.048-1.247 11.585z" fill="#F60" fill-rule="nonzero"/>
+                <text font-family="CircularStd-Bold, Circular Std" font-size="24" font-weight="bold" fill="#FFF" transform="rotate(-39 317.734 -210.722)">
+                                <tspan x="15.892" y="73.732">758 kg</tspan>
+                            </text>
+            </g>
+        </g>
+        <text mask="url(#9ceyvuz6wc)" font-family="CircularStd-Book, Circular Std" font-size="14" fill="#FFF">
+                    <tspan x="20.126" y="104.546">Berechne, wie viel </tspan>
+                    <tspan x="138.048" y="104" font-family="CircularStd-Bold, Circular Std" font-weight="bold">CO2</tspan>
+                    <tspan x="167.77" y="104.546"> </tspan>
+                    <tspan x="20" y="120" font-family="CircularStd-Bold, Circular Std" font-weight="bold">Emission</tspan>
+                    <tspan x="77.638" y="120.546"> Du mit einem </tspan>
+                    <tspan x="20.126" y="136.546">VVS Ticket sparen kannst.</tspan>
+                </text>
+        <text mask="url(#9ceyvuz6wc)" font-family="CircularStd-Bold, Circular Std" font-size="28" font-weight="bold" fill="#FFF">
+                    <tspan x="20" y="88">Spare CO2</tspan>
+                </text>
+    </g>
+</svg>

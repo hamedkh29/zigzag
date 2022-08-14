@@ -1,0 +1,9 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav" (click)="onSidenavClick()">
+    <a mat-button routerLink="/pages/start">Start</a>
+    <a mat-button routerLink="/pages/start">Home</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
