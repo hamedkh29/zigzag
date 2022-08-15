@@ -6,7 +6,20 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build:prod": "ng build --configuration production",
+    "build:prod:stats": "ng build --configuration production --stats-json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --runInBand",
+    "test:coverage": "jest --coverage",
+    "lint": "ng lint",
+    "e2e": "testcafe chrome ./e2e/",
+    "compodoc": "npx compodoc -p tsconfig.app.json",
+    "analyze": "source-map-explorer dist/zigzag/**/*.js",
+    "prettier": "prettier --write \"src/app/**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
+    "audit": "auditjs ossi",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d ."
   },
   "private": true,
   "dependencies": {
@@ -24,7 +37,6 @@
     "@ngbmodule/material-carousel": "^0.7.2",
     "bootstrap": "^5.0.0",
     "ngx-skeleton-loader": "^5.0.0",
-    "prettier": "^2.7.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -33,6 +45,11 @@
     "@angular-devkit/build-angular": "^14.1.1",
     "@angular/cli": "~14.1.1",
     "@angular/compiler-cli": "^14.1.0",
+    "@angular-eslint/builder": "^14.0.0",
+    "@angular-eslint/eslint-plugin": "^14.0.0",
+    "@angular-eslint/eslint-plugin-template": "^14.0.0",
+    "@angular-eslint/schematics": "^14.0.0",
+    "@angular-eslint/template-parser": "^14.0.0",
     "@types/jasmine": "~4.0.0",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
@@ -40,6 +57,37 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@compodoc/compodoc": "^1.1.19",
+    "@types/eslint": "8.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.43",
+    "@typescript-eslint/eslint-plugin": "5.8.0",
+    "@typescript-eslint/eslint-plugin-tslint": "5.8.0",
+    "@typescript-eslint/parser": "5.8.0",
+    "auditjs": "^4.0.36",
+    "auto-changelog": "^2.4.0",
+    "codelyzer": "^6.0.0",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsdoc": "^37.4.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-storybook": "^0.5.13",
+    "jest": "^28.1.2",
+    "jest-junit": "^14.0.0",
+    "jest-preset-angular": "^12.1.0",
+    "prettier": "^2.6.2",
+    "source-map-explorer": "^2.5.2",
+    "testcafe": "^1.18.5",
+    "testcafe-reporter-html": "^1.4.6",
+    "ts-node": "~8.3.0"
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,less,md,ts,html,component.html}": [
+      "prettier --write"
+    ]
   }
 }
