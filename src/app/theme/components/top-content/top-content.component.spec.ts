@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TopContentComponent } from './top-content.component';
+import {ChildrenOutletContexts, RouterModule, UrlSerializer} from "@angular/router";
 
 describe('TopContentComponent', () => {
   let component: TopContentComponent;
@@ -8,7 +9,11 @@ describe('TopContentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TopContentComponent ]
+      declarations: [ TopContentComponent ],
+      providers:[],
+      imports: [
+        RouterModule.forRoot([ ])
+      ]
     })
     .compileComponents();
 

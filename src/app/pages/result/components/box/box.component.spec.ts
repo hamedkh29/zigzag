@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BoxComponent } from './box.component';
+import {NgxSkeletonLoaderModule} from "ngx-skeleton-loader";
 
 describe('BoxComponent', () => {
   let component: BoxComponent;
@@ -8,7 +9,8 @@ describe('BoxComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BoxComponent ]
+      declarations: [ BoxComponent ],
+      imports:[NgxSkeletonLoaderModule]
     })
     .compileComponents();
 

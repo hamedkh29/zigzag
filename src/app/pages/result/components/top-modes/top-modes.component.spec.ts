@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TopModesComponent } from './top-modes.component';
+import {NgxSkeletonLoaderModule} from "ngx-skeleton-loader";
 
 describe('TopModesComponent', () => {
   let component: TopModesComponent;
@@ -8,7 +9,8 @@ describe('TopModesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TopModesComponent ]
+      declarations: [ TopModesComponent ],
+      imports:[NgxSkeletonLoaderModule]
     })
     .compileComponents();
 
