@@ -52,7 +52,7 @@ export class RouteBoxComponent implements OnInit {
         tap(() => (this.sourcesLoading = true)),
         switchMap((term) => {
           const res = this.locationService
-            .FindByLocationName(term)
+            .findByLocationName(term)
             .pipe(tap(() => (this.sourcesLoading = false)));
           return res;
         })
@@ -72,7 +72,7 @@ export class RouteBoxComponent implements OnInit {
         tap(() => (this.destinationLoading = true)),
         switchMap((term) => {
           const res = this.locationService
-            .FindByLocationName(term)
+            .findByLocationName(term)
             .pipe(tap(() => (this.destinationLoading = false)));
           return res;
         })

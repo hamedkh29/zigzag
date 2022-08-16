@@ -1,19 +1,18 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-box',
   templateUrl: './box.component.html',
-  styleUrls: ['./box.component.scss']
+  styleUrls: ['./box.component.scss'],
 })
 export class BoxComponent implements OnInit {
-  @Input() color: string = "";
-  @Input() type: string = "";
-  @Input() icon: string = "";
+  //currently support just primary color
+  @Input() color: string = '';
+  @Input() type: string = '';
+  @Input() icon: string = '';
   @Input() weight: number | null | undefined = 0;
   @Input() isLoading: boolean = true;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
