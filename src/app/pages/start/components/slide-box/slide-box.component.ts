@@ -1,16 +1,17 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-slide-box',
   templateUrl: './slide-box.component.html',
-  styleUrls: ['./slide-box.component.scss']
+  styleUrls: ['./slide-box.component.scss'],
 })
 export class SlideBoxComponent implements OnInit {
-  @Input() slides : string[] = [];
+  /**
+   * The list of slides
+   */
+  @Input() slides: string[] = [];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
